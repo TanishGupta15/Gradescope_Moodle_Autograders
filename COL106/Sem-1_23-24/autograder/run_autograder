@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Set up autograder files
+
+cp /autograder/submission/search.cpp /autograder/source/search.cpp
+cp /autograder/submission/search.h /autograder/source/search.h
+cp /autograder/submission/dict.cpp /autograder/source/dict.cpp
+cp /autograder/submission/dict.h /autograder/source/dict.h
+cp /autograder/submission/qna_tool.cpp /autograder/source/qna_tool.cpp
+cp /autograder/submission/qna_tool.h /autograder/source/qna_tool.h
+
+cd /autograder/source
+
+python3 run_tests.py
